@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>timepass</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="x-icon" href="C:\Users\Xender_Cage\Downloads\887895516338327595.png">
+</head>
+<marquee scrollamount='130' direction='right'><img src='https://cdn.discordapp.com/emojis/887895516338327595.png' alt = "nikonikoniiii"></marquee><hr>
+<marquee scrollamount='150' direction='right'><img src='https://cdn.discordapp.com/emojis/887895516338327595.png' alt = "nikonikoniiii"></marquee><hr>
+<marquee scrollamount='170' direction='right'><img src='https://cdn.discordapp.com/emojis/887895516338327595.png' alt = "nikonikoniiii"></marquee><hr>
+
+<!--the link below is about my biodata click it if you can-->
+<h1><a href = 'biodata.html' target = 'blank'>CHECK MY BIODATA</a></h1>
+
+
+
+
+
+
+<dl>
+<dt>HHHH</dt>
+<dd>bingus</dd>
+<dt>aaaa</dt>
+<dd>haaaaaaaaaaaaaaaaa</dd>
+</dl>
+
+
+
+
+
+
+
+<p align = "center">
+<h1><i>BORGIR 🍔</i></h1>
+<h2>BORGIR 🍔</h2>
+<h3>BORGIR 🍔</h3>
+<h4>BORGIR 🍔</h4>
+<h5>BORGIR 🍔</h5>
+<h6>BORGIR 🍔</h6>
+soup <br>
+<del> I gave up </del> <br>
+<ins>underline indeed</ins>
+<pre>never gonna                   give you up        :)</pre>
+<h1>H<sub>2</sub>O,  (a+b)<sup>3</sup></h1>
+<hr></hr>
+<ul type = *>
+<li>A</li>
+<li>B</li>
+<li>C</li>
+</ul>
+<hr></hr>
+<ol type = a>
+<li>A</li>
+<li>B</li>
+<li>C</li>
+</ol>
+<hr></hr>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol type = 1>
+<li>Fruits</li>
+<ul>
+<li>Apple</li>
+<li>Banana</li>
+</ul>
+<li>Books</li>
+<ol type = 1>
+<li>Motivational</li>
+<li>Novel</li>
+</ol>
+<li>Subject</li>
+<ul>
+<li>CSE</li>
+<li>Internet Programming</li>
+<ol type = 1>
+<li>HTML</li>
+<li>CSS</li>
+<li>JS</li>
+</ol>
+</ul>
+
+<p>Resize the browser window to load different images.</p>
+
+<picture>
+<source media="(min-width:800px)"
+srcset="H:\palm-tree-aesthetic.gif">
+<source media="(min-width:600px)"
+srcset="C:\Users\Xender_Cage\Downloads\eat.gif">
+<img src="C:\Users\Xender_Cage\Downloads\916155140988354641.png" alt ="error" style = width:auto;>
+</picture>
+
+<audio controls>
+<source src="D:\Good Stuff\My Stuff\Akon - Lonely ( 256kbps cbr ).mp3"  >
+</audio>
+<video controls height = "75%" width = "75%" poster = "C:\Users\Xender_Cage\Downloads\eat.gif">
+<source src="H:\Shrek_VP9-60k_Opus-20300.webm" type="video/webm">
+</video>
+
+
+</body>
+</html>
