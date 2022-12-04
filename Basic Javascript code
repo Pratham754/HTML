@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <title>JS</title>
+        <style>
+            input{
+                border-radius: 50cm;
+                height: 40px;
+                padding: 10px;
+                background: linear-gradient(135deg,#00ffff ,#00ff00);
+                color: rgb(0, 0, 0);
+                font-family: montserrat;
+                font-weight: bold;
+            }
+            input:hover{
+                background: linear-gradient(135deg, #00ff00,#00ffff);
+            }
+            button{
+                border-radius: 50px;
+            }
+        </style>
+        <script>
+            function getcurrentdateandtime(){
+                document.getElementById('timeDiv').innerHTML=new Date();
+            }
+            var inter;
+            function startclock(){
+                inter=setInterval(getcurrentdateandtime,1000);
+            }
+            
+            function stopClock(){
+                clearInterval(inter);
+            }
+
+            function myFunction(){
+                document.getElementById("demo").innerHTML = "Hello i am changed using js"
+            }
+
+            function validatemath(){
+                var FN = document.getElementById('a1').value;
+                var SN = document.getElementById('a2').value;
+                if (FN=="" || SN==""){
+                    alert("Fill Bth Fields")
+                    return false;
+                }
+                else{
+                    return true
+                }
+            }
+            function myadd(){
+                var no1= parseInt(document.getElementById('a1').value);
+                var no2= parseInt(document.getElementById('a2').value);
+                var no3=no1+no2
+                myForm.a3.value=no3;
+            }
+            function mysub(){
+                var no1= parseInt(document.getElementById('a1').value);
+                var no2= parseInt(document.getElementById('a2').value);
+                var no3=no1-no2
+                myForm.a3.value=no3;
+            }
+            function mymul(){
+                var no1= parseInt(document.getElementById('a1').value);
+                var no2= parseInt(document.getElementById('a2').value);
+                var no3=no1*no2
+                myForm.a3.value=no3;
+            }
+            function mydiv(){
+                var no1= parseInt(document.getElementById('a1').value);
+                var no2= parseInt(document.getElementById('a2').value);
+                var no3=no1/no2
+                myForm.a3.value=no3;
+            }
+            function myage(){
+                let age=parseInt(document.getElementById('bt2').value);
+                if(age>=18){
+                    return document.getElementById("p1").innerHTML = "YOU ARE ELIGIBLE TO VOTE";
+                }
+                else{
+                    return document.getElementById("p1").innerHTML = "YOU ARE NOT ELIGIBLE TO VOTE";
+                }
+            }
+            function abc(){
+                var retVal = prompt("Enter your Name : ", "your name here");
+                alert("You have entered : " + retVal)
+            }
+            function table(){
+                var num=document.getElementById("multiplication").value;
+                var i=1;
+                for (i=1;i<=20;i++)
+                {
+                    document.write(num +"x"+i+"="+num*i+"<br>");
+                }
+            }
+            function submit(){
+                var pwd=document.getElementById("enterpassword").value;
+                var cpwd=document.getElementById("confirmpassword").value;
+                console.log(pwd)
+                if(pwd==cpwd)
+                alert("ok");
+                else{
+                    alert("Confirm your password again blindo")
+                    return false;
+                }
+            }
+            function sabzimandi(){
+                const fruits = ['Banana','Mango','Apple','Orange','Grapes']
+                let flen=fruits.length
+
+                let text = "<ul>";
+                for (let i=0; i<flen; i++){
+                    text +="<li>" + fruits[i] + "</ul>";
+                }
+                text+="</ul>"
+                document.getElementById("sabji").innerHTML=text;
+            }
+
+            function personaldetails(){
+                const person={
+                    firstname:'Pratham',
+                    lastname:"Choudhary",
+                    age:18
+                };
+
+                document.getElementById("personal").innerHTML= person.firstname + " " + person.lastname + " is " + person.age + " years old";
+            
+                console.log(person.firstname)
+                console.log(person.lastname)
+                console.log(person.age)
+            }
+        </script>        
+    </head>
+    <body><br>
+        <u><div id="timeDiv" style="font-family: montserrat; font-size: 40px; text-align: center; font-weight: bolder; background:
+         linear-gradient(130deg,#00ffff,blueviolet); border-radius: 20px;">Hello</div></u><br>
+        <input type="button" onclick="startclock()" value='startclock'>
+        <input type="button" onclick="stopClock()"value='stopClock'>
+
+        <p id="demo" style="font-family:dungeon"> I am Para </p>
+        <h2><i><center><p id="tyme" style="font-family:dungeon"> What's the time</p></center></i></h2>
+        <button type="button" onclick="myFunction()">Click here</button>
+        <button onclick="document.getElementById('tyme').innerHTML = Date();">Check date n time</button><br><hr><br>
+        <button onclick="document.getElementById('myImage').src='879274886353289258.png'">Turn on the car</button>
+        <img id="myImage" src="887895516338327595.png" style="width:100px">
+        <button onclick="document.getElementById('myImage').src='916155140988354641.png'">Turn off the car</button><br><hr>
+
+
+        <h1 style="font-family:Dakiens; font-size: 48px">Changing Background Color Using Javascript Buttons</h1>
+
+        <justify>
+        <li><button style="font-family:dungeon; font-size: 36px" onclick="document.body.style.backgroundColor='blueviolet'">blueviolet</button></li><br>
+        <li><button style="font-family:dungeon; font-size: 36px" onclick="document.body.style.backgroundColor='red'">red</button></li><br>
+        <li><button style="font-family:dungeon; font-size: 36px" onclick="document.body.style.backgroundColor='yellow'">yellow</button></li><br>
+        <li><button style="font-family:dungeon; font-size: 36px" onclick="document.body.style.backgroundColor='orange'">orange</button></li><br>
+        <li><button style="font-family:dungeon; font-size: 36px" onclick="document.body.style.backgroundColor='black'">black</button></li><br>
+        <li><button style="font-family:dungeon; font-size: 36px" onclick="document.body.style.backgroundColor='pink'">pink</button></li><br>
+        </justify><br><br><hr style="border-style: dashed">
+
+
+
+        <!------------------------------------------17 November 2022------------------------------------------->
+        <!---------------------------------------------CALCULATOR---------------------------------------------->
+        <center><h2 style="font-family: payback;">Walmart Calculator</h2></center>
+        <form id="my Form">
+            <input type="text" id="a1" name="a1" placeholder="Enter first number"/> &nbsp;
+            <input type="text" id="a2" name="a2" placeholder="Enter second number"/> &nbsp;
+            <input type="text" id="a3" name="a3" placeholder="Result"/><br><br>
+            <input type="button" value="add" id="a4" onclick="myadd()"/> &nbsp;
+            <input type="button" value="subtract" id="a6" onclick="mysub()"/> &nbsp;
+            <input type="button" value="multiply" id="a7" onclick="mymul()"/> &nbsp;
+            <input type="button" value="divide" id="a8" onclick="mydiv()"/> &nbsp;
+            <input type="button" value="reset" id="a5" onclick="reset()"/>
+        </form><hr style="border-style: dashed">
+        <center><h2 style="font-family: payback;">Click here to know if you can vote or nahh</h2></center>
+        <form id="agecheck">
+            <input type="number" id="bt2" name="bt2" placeholder="Enter age"/> &nbsp;
+            <input type="button" value="Check age" id="bt3" onclick="myage()"/>
+            <p id="p1"></p>
+        </form><hr style="border-style: dashed">
+        <center><h2 style="font-family: payback;">Prompt</h2></center>
+        <center><input type="submit" target="blank" onclick="abc()"><hr style="border-style: dashed"></center>
+        <center><h2 style="font-family: payback;">Table Calculator</h2></center>
+        <p>Enter The Number You Want The Table For:-</p>
+        <input type="text" value="" id="multiplication" placeholder="qwerty">
+        <input type="button" value="tables" onclick="table()">
+        <br><br><br><hr style="border-style: dashed">
+
+        <form method="post"><center><h2 style="font-family: payback;">CONFIRM PASSWORD</h2></center>
+        Password: <input type="password" id="enterpassword" placeholder="enter password" value=""/><br>
+        Confirm Password: <input type="password" id="confirmpassword" placeholder="confirm password" value=""/><br>
+        </form>
+        <button style="font-family: montserrat; font-size: 40px; text-align: center; font-weight: bolder; background:
+        linear-gradient(130deg,#00ffff,blueviolet); border-radius: 20px;"onclick="submit()">Submit</button>
+        <br><br><br><hr style="border-style: dashed">
+        <center><h2 style="font-family: payback;">WISH TO CONTINUE</h2></center>
+
+        <br><br><br><hr style="border-style: dashed">
+        
+        <center><h2 style="font-family: payback;">LEARNING ARRAY LIST</h2></center>
+        <p id="sabji">
+        <center><button style="font-family: montserrat; font-size: 40px; text-align: center; font-weight: bolder; background:
+         linear-gradient(130deg,#00ffff,blueviolet); border-radius: 20px;" onclick="sabzimandi()">get fruits list</button></center>
+        </p>
+
+        <br><hr style="border-style: dashed">
+        
+        <center><h2 style="font-family: payback;">LEARNING ARRAY CONCATENATION</h2></center>
+        <p id="personal">
+            <center><button style="font-family: montserrat; font-size: 40px; text-align: center; font-weight: bolder; background:
+         linear-gradient(130deg,#00ffff,blueviolet); border-radius: 20px;" onclick="personaldetails()">about me</button></center>
+        </p>
+        <br><hr style="border-style: dashed">
+
+
+    </body>
+</html>
