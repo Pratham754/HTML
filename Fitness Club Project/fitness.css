@@ -1,16 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
-nav{
+
+
+/*______________________navbar_____________________*/
+
+
+nav {
     color: aliceblue;
     top: 0;
     background: #111111;
     height: 60px;
     width: 100%
 }
-label.logo{
+
+label.logo {
     font-family: montserrat;
     font-weight: bold;
     font-size: 40px;
@@ -18,19 +24,28 @@ label.logo{
     line-height: 60px;
     padding: 0 15px;
 }
-nav ul{
+
+label.logo a {
+    text-decoration: none;
+    color: rgb(255, 155, 0);
+    background: none;
+}
+
+nav ul {
     float: right;
     margin-right: 20px;
     font-weight: 1000;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     line-height: 60px;
     margin: 0 5px;
     font-family: montserrat;
     font-size: 20px;
 }
-nav ul li a{
+
+nav ul li a {
     color: white;
     font-size: 20px;
     padding: 2.5px 5px;
@@ -38,36 +53,44 @@ nav ul li a{
     text-transform: uppercase;
     text-decoration: none;
 }
-a.active,a:hover{
-    background: rgb(255,125,0);
+
+a:hover {
+    color: rgb(255, 125, 0);
+    background: none;
     transition: .5s;
 }
 
+a.active {
+    background: rgb(255, 125, 0);
+}
 
 /*______________________login_____________________*/
 
 
-.login{
+.login {
     background: #4645452f;
     display: grid;
     text-align: center;
     grid-template-columns: 50% 50%;
     height: 100vh;
 }
-.login .fitnesslogo{
+
+.login .fitnesslogo {
     padding-top: 100px;
 }
-img{
+
+img {
     height: 400px;
 }
 
-.fitnesslogin{
+.fitnesslogin {
     border-radius: 5px;
     margin: 0% 25% 25% 25%;
     font-size: 40px;
     text-align: left;
 }
-.form1{
+
+.form1 {
     padding-left: 10px;
     padding-right: 20px;
     padding-bottom: 5px;
@@ -77,9 +100,10 @@ img{
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-family: Montserrat;
-    border-radius: 5px 5px; 
+    border-radius: 5px 5px;
 }
-.form1 input[type=text]{
+
+.form1 input[type=text] {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5px;
@@ -91,23 +115,28 @@ img{
     border-radius: 5px;
     background: #464545;
 }
-.genders{
+
+.genders {
     padding-top: 10px;
     display: grid;
     grid-template-columns: 50% 50%
 }
-.gender1,.gender2{
+
+.gender1,
+.gender2 {
     display: inline-block;
     border-radius: 5px;
     text-align: center;
 }
-label{
+
+label {
     text-transform: uppercase;
     font-weight: 400;
 }
-.form1 button{
+
+.form1 button {
     font-size: 30px;
-    background: linear-gradient(130deg,aqua,blueviolet);
+    background: linear-gradient(130deg, aqua, blueviolet);
     border: none;
     border-radius: 25px;
     display: inline-block;
@@ -116,16 +145,19 @@ label{
     font-family: payback;
     font-weight: 400;
 }
-.form1 button:hover{
-    background: linear-gradient(130deg,blueviolet,aqua);
+
+.form1 button:hover {
+    background: linear-gradient(130deg, blueviolet, aqua);
     transition: .5s;
 }
-.form1 a{
+
+.form1 a {
     color: aliceblue;
     font-size: 16px;
     text-decoration: none;
 }
-.form1 a:hover{
+
+.form1 a:hover {
     padding: 0 5px 0 5px;
     border-radius: 5px;
 }
@@ -134,8 +166,8 @@ label{
 /*________________about_________________*/
 
 
-.about{
-    height: 300px;
+.about {
+    height: 400px;
     background: rgb(255, 255, 255);
     margin: 20px;
     padding: 0;
@@ -143,7 +175,8 @@ label{
     font-size: 36px;
     text-transform: uppercase;
 }
-.about .abouttext{
+
+.about .abouttext {
     background: #46454550;
     text-transform: none;
     font-size: 16px;
@@ -158,7 +191,7 @@ label{
 /*________________training_________________*/
 
 
-.training{
+.training {
     height: 900px;
     background: #4645452f;
     padding-top: 10px;
@@ -168,38 +201,43 @@ label{
     text-transform: uppercase;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-.container .box{
+
+.container .box {
     border-radius: 10px;
-    border: .1rem solid rgba(0,0,0,.3);
+    border: .1rem solid rgba(0, 0, 0, .3);
     font-weight: bold;
     width: 35rem;
     position: relative;
     margin: 1.5rem;
 }
-.heads{
+
+.heads {
     margin: 0;
     padding-left: 10px;
     background: #464545;
     border-radius: 10px 10px 0 0;
 }
-.setrep{
+
+.setrep {
     font-size: 15px;
     display: grid;
     grid-template-columns: 15% 85%;
     grid-template-areas: 'sets exercise';
 }
-.setrep .sets{
+
+.setrep .sets {
     padding-left: 10px;
     text-transform: capitalize;
     grid-area: sets;
 }
-.setrep .exercise{
+
+.setrep .exercise {
     padding-left: 10px;
     grid-area: exercise;
 }
@@ -208,7 +246,7 @@ label{
 /*________________footer_________________*/
 
 
-.footer{
+.footer {
     display: grid;
     grid-template-columns: auto auto;
     text-align: justify;
@@ -219,31 +257,37 @@ label{
     background: #0a0a0a;
     height: 150px;
 }
-.footer2{
+
+.footer2 {
     font-family: montserrat;
     padding: 10px 0 10px 0;
     text-align: center;
     background: #464646;
     height: 40px;
 }
-.contactus ul li i{
+
+.contactus ul li i {
     color: white;
     font-size: 20px;
-    background: rgb(255,125,0);
+    background: rgb(255, 125, 0);
     border-radius: 15px;
     display: inline-block;
     padding: 5px 5px 5px 5px;
     margin: 10px 10px 0px 10px;
 }
-.quicks ul li{
+
+.quicks ul li {
     list-style: none;
     padding: 4px 0px 5px 0;
 }
-.quicks ul li a{
+
+.quicks ul li a {
     padding: 0 5px 0 5px;
     color: rgb(153, 153, 153);
     text-decoration: none;
 }
-.quicks ul li a:hover{
+
+.quicks ul li a:hover {
+    color: black;
     border-radius: 5px;
 }
